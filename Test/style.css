@@ -1,5 +1,5 @@
 
-/*.herhack {
+.herhack {
   padding : auto;
   text-overflow: clip;
   transform:skewX(-25deg);
@@ -10,8 +10,8 @@
   position:absolute;
   left:25%;
   top:36%;
-  }*/
-/*#name{
+  }
+#name{
   font-weight: "ExtraBold Italic";
   font-size: 130px;
   width: 655px;
@@ -21,19 +21,5 @@
   letter-spacing: 0px;
   padding : 23% 9% 13% 9%;
 
-}*/
-
-
-#page1{
-  background: url("Hashtag.svg") no-repeat center;
-  background-size: cover;
-  background-position: center;  
-  width: 1196px;
-  height: 600px;
-  align-items: center;
-  display: block;
-    /*margin-left: auto;
-  margin-right: auto;*/
-  /*margin: 0px 361px 0px 362px;*/ 
-  margin-left: 10%;
 }
+
