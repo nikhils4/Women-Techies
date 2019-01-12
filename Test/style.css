@@ -1,0 +1,20 @@
+.herhack {
+  box-sizing: content-box;
+  padding : auto;
+  text-overflow: clip;
+  transform:skewX(-25deg);
+  width: 795px;
+  height: 212px;
+  background: rgba(0,194,162,1);
+  align-items:center;
+  display: flex;
+}
+
+/*.page1{
+  background-image: url("main.jpg");
+}*/
+
+/*img {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}*/
