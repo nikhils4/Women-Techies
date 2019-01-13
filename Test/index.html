@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="style.css" type="text/css">
 	<title>Herhack</title>
 <style>
 	html {
 		margin: 0px;
 
 	}
-	#top-image{
-		width: 30%;
-		height: auto;
-		margin: auto 0;
-		text-align: center;
-		position: absolute;
-		display: block;
-	}
+    #top-image{
+        width: inherit;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
 	#page1{
 		background: url("Hashtag.svg") no-repeat;
 		background-size: cover;
 		width: 70%;
 		margin-right: 15%;
 		margin-left : 15%;
-		height: 100vh;
+		height: 95vh;
 	}
+	.border {
+		width: 60px;
+		height: 1px;
+		background: #6ab04c;
+		border: 1px solid #dee2e6!important;
+	}
+    .herhack {
+        padding : auto;
+        text-overflow: clip;
+        transform:skewX(-20deg);
+        width: 445px;
+        height: 120px;
+        background: rgba(0,194,162,1);
+        align-items:center;
+        position:absolute;
+        left:38%;
+        top:45%;
+    }
+    #name{
+        font-weight: "ExtraBold Italic";
+        font-size: 90px;
+        width: 655px;
+        font-family: Muli;
+        color: rgba(255,255,255,1);
+        letter-spacing: 0px;
+    }
 </style>
 
 <body>
-
 
 <div id = "page1">
 		<img id="top-image" src="Top-image.png">
 	<div class="herhack"> 
 		 <span id="name" style="font-family: 'Muli', sans-serif;">HERHACK</span>
 	</div>
-	 <h4 style="width: 196px;height: 48px;"> KNOW MORE </h4>
-	
+    <div style="margin-top: 80vh;margin-left: 48%;">
+        <p> KNOW MORE </p>
+	    <div class="border" style="padding-top: 1px;margin-left: 3%;"></div>
+    </div>
 </div>
 
 </body>
