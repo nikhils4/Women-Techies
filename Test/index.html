@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<title>Herhack</title>
 <style>
 	html {
@@ -32,9 +36,9 @@
     .herhack {
         padding : auto;
         text-overflow: clip;
-        transform:skewX(-20deg);
-        width: 445px;
-        height: 120px;
+        transform:skewX(-10deg);
+        width: 430px;
+        height: 118px;
         background: rgba(0,194,162,1);
         align-items:center;
         position:absolute;
@@ -42,27 +46,34 @@
         top:45%;
     }
     #name{
-        font-weight: "ExtraBold Italic";
-        font-size: 90px;
+        font-weight: "ExtraBold";
+        font-size: 70px;
         width: 655px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 118px;
         font-family: Muli;
+        padding-left: 43px;
         color: rgba(255,255,255,1);
-        letter-spacing: 0px;
     }
 </style>
 
 <body>
-
-<div id = "page1">
-		<img id="top-image" src="Top-image.png">
-	<div class="herhack"> 
-		 <span id="name" style="font-family: 'Muli', sans-serif;">HERHACK</span>
-	</div>
-    <div style="margin-top: 80vh;margin-left: 48%;">
-        <p> KNOW MORE </p>
-	    <div class="border" style="padding-top: 1px;margin-left: 3%;"></div>
+<div class="container">
+    <div class="row">
+        <div id = "page1">
+                <img class = "image-responsive" id="top-image" src="Top-image.png">
+            <div class="herhack">
+                 <span id="name" style="font-family: 'Muli', sans-serif;">HERHACK</span>
+            </div>
+            <div style="margin-top: 80vh;margin-left: 48%;">
+                <p> KNOW MORE </p>
+                <div class="border" style="padding-top: 1px;margin-left: 3%;"></div>
+            </div>
+        </div>
     </div>
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
