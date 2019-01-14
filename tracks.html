@@ -14,16 +14,15 @@
             margin: 0;
         }
         @media (max-width: 990px) {
-            #left {
-                width: 100px;
+            #leftTr {
+                width: 100%;
                 max-height: 70px;
-
             }
-            #right {
+            #rightTr {
                 width : 100%;
                 display: block;
             }
-            #logo {
+            #logoTr {
                 height: 80px;
                 opacity: 0.3;
                 width : auto;
@@ -68,7 +67,7 @@
             .phoneT {
                 height: 120px;
                 width : 120px;
-                margin: 0 3% 2.5% 3%;
+                margin: 0% 3% -2% 3%;
                 border-radius: 15px;
                 background: rgb(81,213,191);
                 display: inline-block;
@@ -79,7 +78,7 @@
 
         }
         @media (min-width: 991px) {
-            #logo {
+            #logoTr {
                 position: absolute;
                 height: 260px;
                 width : auto;
@@ -115,7 +114,7 @@
                 font-size: 40px;
                 margin-top: 7%;
             }
-            #right {
+            #rightTr {
                 padding-left: 10%;
             }
 
@@ -126,11 +125,11 @@
 <body style="font-family: 'Muli', sans-serif;">
     <div class="container-fluid">
         <div class="row">
-            <div id="left" style="float:left;  display: inline-block; margin-left: -15px;" class=" col-md-2">
-                <img id="logo" src="Assets/WTM.png" >
+            <div id="leftTr" style="float:left;  display: inline-block; margin-left: -15px;" class=" col-md-2">
+                <img id="logoTr" src="Assets/WTM.png" >
 
             </div>
-            <div id="right" class="col-md-10" style="float: right; height: 100%; display: inline-block; background: rgba(0,194,162,1); color : white;">
+            <div id="rightTr" class="col-md-10" style="float: right; height: 100%; display: inline-block; background: rgba(0,194,162,1); color : white;">
                 <!--place for cards    -->
 
                 <div class="row" style="text-align: center;">
@@ -147,7 +146,7 @@
 
                     </div>
                 </div>
-                <div class="hideen">
+                `<div class="hideen">
                     <img src="Assets/arrowDown.png"  style=" float: right; position:absolute;  margin-left: 80%; ">
                     <img src="Assets/Arrow.png" style=" float: right;   margin-left: 80%; margin-top : -6% ; position: absolute; ">
                 </div>
