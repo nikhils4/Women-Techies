@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>DSC | About</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <style>
         body {
             margin: 0;
         }
+
         #about {
             color: white;
             padding: 5px;
@@ -15,11 +18,23 @@
             margin-left: 17%;
             position: absolute;
             background: rgba(1, 175, 146, 1);
-            height: 40px;
+            height: 75px;
             width: 22%;
+            font-size: 30px;
             text-align: center;
             font-size: 40px;
             margin-top: 7%;
+        }
+        @media screen and (min-width: 991px){
+            #loggo{
+                margin-top: 0%;
+            }
+            #about{
+                margin-top: 10%;
+            }
+            .row{
+                display: inline-block;
+            }
         }
 
 
@@ -27,19 +42,22 @@
 </head>
 <body style="font-family: 'Muli', sans-serif;">
 
-<div style="float: right; width: 80%; height: 100vh; display: inline-block; background: rgba(0,194,162,1); color : white; text-align: justify; font-size: 18px;">
-    <img src="Assets/Arrow.png" style=" float: right; margin-right: 4%;  margin-top: 30% ">
-    <p style="margin-top: 20%; margin-left: 12%; margin-right : 14%;">Hello this is HerHack Websiten iudbf ijashd  oidv asb vou bauos vuo osov ouas dovoin oid nvio nasoud voun ousd boub ouas dvou bouasb douvb oubs douvb joasb douv bob sodjvb o a soudvb ou bsodb oubsdo vo suodfb oub sduob uiob dwuicb iusb duovb uoas bdvuob uob vubsuofb vuob quob uob uodvb iuoab sduovb uabsdvuo uosb vuob uboF</p>
-    <p style="margin-left: 12%; margin-right : 14%;">This is good</p>
+<div class="container-fluid">
+    <div class="row">
+        <div id = "about" class="col-xm-10" style="float: right; width: 80%; height: 100vh; display: inline-block; background: rgba(0,194,162,1); color : white; text-align: justify; font-size: 18px;">
+            <img src="Assets/Arrow.png" style=" float: right; margin-right: 4%;  margin-top: 30% ">
+            <p style="margin-top: 20%; margin-left: 12%; margin-right : 14%;">Hello this is HerHack Websiten iudbf ijashd  oidv asb vou bauos vuo osov ouas dovoin oid nvio nasoud voun ousd boub ouas dvou bouasb douvb oubs douvb joasb douv bob sodjvb o a soudvb ou bsodb oubsdo vo suodfb oub sduob uiob dwuicb iusb duovb uoas bdvuob uob vubsuofb vuob quob uob uodvb iuoab sduovb uabsdvuo uosb vuob uboF</p>
+            <p style="margin-left: 12%; margin-right : 14%;">This is good</p>
+            <img src="Assets/arrowDown.png"  style=" float: right; margin-right: 4%; margin-top : 6%;">
+        </div>
 
-    <img src="Assets/arrowDown.png"  style=" float: right; margin-right: 4%; margin-top : 6%;">
+        <!--<div id="about">About HerHack</div>-->
+
+        <div id = "loggo" style="float:left; width : 20%; height: 100vh;clear: col-xm-2; display: inline-block;">
+            <img src="Assets/WTMleft.png"  style="position: absolute; opacity: 0.5; float: left; width : 150px; height: auto; margin-top : 65vh">
+        </div>
+
+    </div>
 </div>
-
-<div id="about">About HerHack</div>
-
-<div style="float:left; width : 20%; height: 100vh; display: inline-block;">
-    <img src="Assets/WTMleft.png"  style="position: absolute; opacity: 0.5; float: left; width : 150px; height: auto; margin-top : 65vh">
-</div>
-
 </body>
 </html>
