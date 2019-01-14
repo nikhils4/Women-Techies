@@ -8,125 +8,128 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <title>Herhack</title>
+
     <style>
         html {
             margin: 1px;
-
         }
         #top-image{
-            width: inherit;
             height: auto;
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
+            width: 55%;
         }
         #page1{
             background: url("Hashtag.svg") no-repeat;
             background-size: cover;
-
-            margin-right: 15%;
-            margin-left : 15%;
+            background-position: center;
             height: 100%;
         }
         .border {
-            width: 60px;
-            height: 1px;
+            width: 65px;
+            height: 1.2px;
             background: #6ab04c;
             border: 1px solid #dee2e6!important;
         }
+
+        @media (max-width : 990px) {
+            #page1{
+                background: url("Hashtag.svg") no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 100%;
+                height: auto;
+            }
+            #first {
+                width: 100%;
+                visibility: hidden;
+            }
+            #second {
+                width: 100%;
+                visibility: hidden;
+            }
+        }
+        @media (min-width : 990px) {
+            #page1{
+                width: 58%;
+            }
+            #first {
+                width: 21%;
+                visibility: hidden;
+            }
+            #second {
+                width: 21%;
+                visibility: hidden;
+            }
+        }
+
+        /*Need to make responsive following code*/
+
+
+
+
         .herhack {
-            padding : auto;
-            text-overflow: clip;
-            transform:skewX(-10deg);
-            transform:skewY(-1.5deg);
-            width: 32%;
-            height: 118px;
+            width: 45%;
+            height: 13%;
             background: rgba(0,194,162,1);
             align-items:center;
             position:absolute;
-            left:38%;
-            top:44%;
+            left:25%;
+            top:40%;
+            align-items: center;
+            /*clip-path: polygon(2% 60%, 86% 57%, 83% 98%, 0% 100%);*/
         }
         #name{
-            font-weight: "ExtraBold";
-            font-size: 500%;
-            width: 25%;
+            font-weight: bold;
+            font-size: 290%;
+            width: 50%;
+            position: absolute;
             text-align: center;
-            vertical-align: middle;
             line-height: 118px;
             font-family: Muli;
             padding-left: 35px;
             color: rgba(255,255,255,1);
         }
-        @media (max-width : 990px) {
-            #main {
-                width: 100%;
+        @media screen and (max-width: 990px){
+            #name{
+                font-size: 30px;
             }
-            #first {
-                visibility: hidden;
-            }
-
-            #second {
-                visibility: hidden;
-            }
-
-
         }
+        @media (max-width: 480px){
+            #name{
+                font-size: 150%;
+            }
+        }
+
     </style>
 
 <body style="font-family: 'Muli', sans-serif;">
 
-<!--<div class="container-fluid">-->
-    <!--<div class="row">-->
-        <!--<div  id = "page1">-->
-            <!--<img class = "image-responsive" id="top-image" src="Top-image.png">-->
-            <!--<div class="col-md-2 clearfix visible-lg-block"></div>-->
-            <!--<div class="col-md-8 colo-xs-12">-->
 
-            <!--</div>-->
-            <!--<div class="col-md-2 clearfix visible-lg-block"></div>-->
-        <!--</div>-->
-    <!--</div>-->
+<div class="container-fluid">
+    <div class="row">
 
+        <div id="first" class="col-md-1 ">&nbsp;</div>
 
-    <div class="container-fluid">
-        <div class="row">
-
-            <div id="first" class="col-md-1 "></div>
-
-            <div class="col-md-10 colo-xs-12" id="main">
-            <div id = "page1">
-                <img class = "image-responsive" id="top-image" src="Top-image.png">
-                <div class="herhack">
-                    <span id="name" style="font-family: 'Muli', sans-serif;">HERHACK</span>
-                </div>
-                <div style="margin-top: 90vh;margin-left: 48%;">
-                    <p> KNOW MORE </p>
-                    <div class="border" style="padding-top: 1px;margin-left: 3%;"></div>
-                </div>
+        <div class="col-md-10 colo-xs-12" id="page1">
+            <img class = "image-responsive" id="top-image" src="Top-image.png">
+            <div class="herhack">
+                <p id="name" style="font-family: 'Muli', sans-serif;">Women Techies</p>
             </div>
+            <div style="margin-top: 90vh;margin-left: 45.5%;">
+
+                <h3 style="color: rgba(0,194,162,1);"> <b>KNOW MORE</b> </h3>
+                <div class="border" style="padding-top: 1px;margin-left: 6%;"></div>
             </div>
-
-            <div class="col-md-1 " id="second"></div>
-
         </div>
+
+        <div class="col-md-1 " id="second">&nbsp;</div>
+
     </div>
-
-
-
-    <!--<div class="herhack">-->
-    <!--<span id="name" style="font-family: 'Muli', sans-serif;">HERHACK</span>-->
-    <!--</div>-->
-    <!--<div style="margin-top: 80vh;margin-left: 48%;">-->
-    <!--<p> KNOW MORE </p>-->
-    <!--<div class="border" style="padding-top: 1px;margin-l-->
-    <!--<div class="container">eft: 3%;"></div>-->
-    <!--</div>-->
-    <!--</div>-->
-
-        </div>
-    </div>
+</div>
+</div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
