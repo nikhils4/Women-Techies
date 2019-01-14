@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Women Techies | DSC</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <style>
+        body {
+            margin: 0;
+        }
+        @media (max-width : 990px) {
+            #rightAbt {
+                width: 100%;
+                max-height: 70px;
+                padding : 0 !important;
+            }
+            #leftAbt {
+                width : 100%;
+                display: block;
+                max-height : 600px;
+                padding : 0 !important;
+            }
+            #logoAbt {
+                height: 80px;
+                opacity: 0.3;
+                width : auto;
+                margin-top : 20px;
+            }
+            #desc {
+                color: white;
+                padding: 5px 5px 15px;
+                margin-left: 22%;
+                position: absolute;
+                background: rgba(1, 175, 146, 1);
+                height: 40px;
+                width: 55%;
+                text-align: center;
+                font-size: 20px;
+                margin-top: 12%;
+            }
+            p {
+                margin-top: 15%;
+                margin-left : 10%;
+                margin-right : 10%;
+                font-size: 18px;
+            }
+            .hideen {
+                visibility: hidden;
+            }
+            #rightPs {
+                width : 100%;
+                max-height: 70px;
+                padding: 0px !important;
+            }
+            #leftPs {
+                width : 100%;
+                display: block;
+                max-height: 550px;
+
+            }
+            #logoPs {
+                height: 80px;
+                opacity: 0.3;
+                width : auto;
+                float: right;
+                margin-top : 20px;
+
+            }
+            #details {
+                color: white;
+                padding: 5px 5px 15px;
+                margin-left : 20%;
+                position: absolute;
+                background: rgba(1, 175, 146, 1);
+                height: 40px;
+                width: 55%;
+                text-align: center;
+                font-size: 20px;
+                margin-top: 12%;
+            }
+            #leftTr {
+                width: 100%;
+                max-height: 70px;
+            }
+            #rightTr {
+                width : 100%;
+                display: block;
+            }
+            #logoTr {
+                height: 80px;
+                opacity: 0.3;
+                width : auto;
+                margin-top : 20px;
+            }
+            .cardTop {
+                height: 120px;
+                width : 120px;
+                margin: 18% 3% 5% 3%;
+                border-radius: 15px;
+                background: rgb(81,213,191);
+                display: inline-block;
+            }
+            .cardBottom {
+                height: 120px;
+                width : 120px;
+                margin: 2.5% 3% 5% 3%;
+                border-radius: 15px;
+                background: rgb(81,213,191);
+                display: inline-block;
+            }
+            #about {
+                color: white;
+                padding: 5px 5px 15px;
+                margin-left: 40%;
+                position: absolute;
+                background: rgba(1, 175, 146, 1);
+                height: 40px;
+                width: 22%;
+                text-align: center;
+                font-size: 20px;
+                margin-top: 12%;
+            }
+            .phone {
+                height: 120px;
+                width : 120px;
+                margin: 0% 3% 15% 3%;
+                border-radius: 15px;
+                background: rgb(81,213,191);
+                display: inline-block;
+            }
+            .phoneT {
+                height: 120px;
+                width : 120px;
+                margin: 0% 3% -2% 3%;
+                border-radius: 15px;
+                background: rgb(81,213,191);
+                display: inline-block;
+            }
+            #rightDet {
+                width : 100%;
+                max-height: 70px;
+                display: block;
+                padding: 0px !important;
+            }
+            #leftDet {
+                width : 100%;
+                display: block;
+                max-height: 450px;
+                font-size: 15px;
+                padding-left: 0px;
+                padding-right: 70px;
+            }
+            #logoDet {
+                height: 80px;
+                opacity: 0.3;
+                width : auto;
+                float: right;
+                margin-top : 20px;
+                margin-right : 27px;
+            }
+            #event {
+                color: white;
+                padding: 5px 5px 15px;
+                margin-left : 35%;
+                position: absolute;
+                background: rgba(1, 175, 146, 1);
+                height: 40px;
+                width: 25%;
+                text-align: center;
+                font-size: 20px;
+                margin-top: 14%;
+            }
+
+        }
+        @media (min-width : 991px) {
+            #logoAbt {
+                position: absolute;
+                height: 260px;
+                width : auto;
+                opacity: 0.4;
+                margin-left : -110px;
+                margin-top : 190%;
+            }
+
+            #desc {
+                color: white;
+                padding: 5px 5px 15px;
+                margin-left: 8%;
+                position: absolute;
+                background: rgba(1, 175, 146, 1);
+                height: 60px;
+                width: 25%;
+                text-align: center;
+                font-size: 40px;
+                margin-top: 7%;
+            }
+            #rightAbt {
+                padding : 0 !important;
+            }
+            #leftAbt {
+                height : 840px ;
+                padding: 0 !important;
+            }
+            p {
+                margin-top: 20%;
+                margin-left : 10%;
+                margin-right : 15%;
+                font-size: 22px;
+                line-height : 1.5;
+            }
+            #leftPs {
+                height: 900px;
+            }
+            #logoPs {
+                position: absolute;
+                height: 260px;
+                width : auto;
+                opacity: 0.4;
+                margin-left: 35px;
+                margin-top : 190%;
+            }
+            #details {
+                color: white;
+                padding: 5px 5px 15px;
+                margin-left: 65%;
+                position: absolute;
+                background: rgba(1, 175, 146, 1);
+                height: 60px;
+                width: 30%;
+                text-align: center;
+                font-size: 40px;
+                margin-top: 7%;
+            }
+            #logoTr {
+                position: absolute;
+                height: 260px;
+                width : auto;
+                opacity: 0.4;
+                margin-left : -110px;
+                margin-top : 190%;
+            }
+            .cardTop {
+                height: 160px;
+                width : 160px;
+                margin: 20% 0 5% 5%;
+                border-radius: 15px;
+                background: rgb(81,213,191);
+                display: inline-block;
+            }
+            .cardBottom {
+                height: 160px;
+                width : 160px;
+                margin: 4% 0 18% 5%;
+                border-radius: 15px;
+                background: rgb(81,213,191);
+                display: inline-block;
+            }
+            #about {
+                color: white;
+                padding: 5px 5px 15px;
+                margin-left: 12%;
+                position: absolute;
+                background: rgba(1, 175, 146, 1);
+                height: 60px;
+                width: 12%;
+                text-align: center;
+                font-size: 40px;
+                margin-top: 7%;
+            }
+            #rightTr {
+                padding-left: 10%;
+            }
+            #leftDet {
+                font-size: 22px;
+                height: 900px;
+            }
+            #logoDet {
+                position: absolute;
+                height: 260px;
+                width : auto;
+                opacity: 0.4;
+                margin-left: 35px;
+                margin-top : 190%;
+            }
+            #event {
+                color: white;
+                padding: 5px 5px 15px;
+                margin-left: 75%;
+                position: absolute;
+                background: rgba(1, 175, 146, 1);
+                height: 60px;
+                width: 15%;
+                text-align: center;
+                font-size: 40px;
+                margin-top: 7%;
+            }
+
+        }
+    </style>
+</head>
+<body style="font-family: 'Muli', sans-serif;">
+
+<div class="container-fluid">
+    <div class="row">
+        <div id="rightAbt" class="col-md-2" style="float:left; display: inline-block;">
+            <img  id="logoAbt" src="Assets/WTM.png"  >
+        </div>
+
+        <div id="leftAbt" class="col-md-10" style="float: right; display: inline-block; background: rgba(0,194,162,1); color : white; text-align: justify;">
+            <!--<img src="Assets/Arrow.png" class="hideen" style=" float: right; margin-right: 4%;  margin-top: 30% ">-->
+            <p >Hello this is HerHack Websiten iudbf ijashd  oidv asb vou bauos vuo osov ouas dovoin oid nvio nasoud voun ousd boub ouas dvou bouasb douvb oubs douvb joasb douv bob sodjvb o a soudvb ou bsodb oubsdo vo suodfb oub sduob uiob dwuicb iusb duovb uoas bdvuob uob vubsuofb vuob quob uob uodvb iuoab sduovb uabsdvuo uosb vuob uboF</p>
+
+
+            <!--<img src="Assets/arrowDown.png" class="hideen"  style=" float: right; margin-right: -2%; margin-top : 6%;">-->
+        </div>
+
+        <div id="desc">About HerHack</div>
+
+
+    </div>
+</div>
+
+<!--previous sponsors-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2" id="rightPs" style="float: right; display: inline-block;  color : white; ">
+            <!--green arrow required-->
+            <!--<img src="Assets/Arrow.png" style=" float: right; margin-right: 4%;  margin-top: 30% ">-->
+            <img src="Assets/WTM.png" id="logoPs">
+        </div>
+        <div class="col-md-10 " id="leftPs" style="float:left;height: 900px;display: inline-block;background: rgba(0,194,162,1);color: white;">
+
+        </div>
+        <div  id="details">
+            Previous Sponsors
+        </div>
+    </div>
+</div>
+
+<!--tracks-->
+<div class="container-fluid">
+    <div class="row">
+        <div id="leftTr" style="float:left;  display: inline-block; margin-left: -15px;" class=" col-md-2">
+            <img id="logoTr" src="Assets/WTM.png" >
+
+        </div>
+        <div id="rightTr" class="col-md-10" style="float: right; height: 100%; display: inline-block; background: rgba(0,194,162,1); color : white;">
+            <!--place for cards    -->
+
+            <div class="row" style="text-align: center;">
+                <div class="col-md-6 col-lg-3 cardTop" >
+
+                </div>
+                <div class="col-md-6 col-lg-3 cardTop"  >
+
+                </div>
+                <div class="col-md-6 col-lg-3 cardTop phoneT"  >
+
+                </div>
+                <div class="col-md-6 col-lg-3 cardTop  phoneT"  >
+
+                </div>
+            </div>
+            `<div class="hideen">
+            <img src="Assets/arrowDown.png"  style=" float: right; position:absolute;  margin-left: 80%; ">
+            <img src="Assets/Arrow.png" style=" float: right;   margin-left: 80%; margin-top : -6% ; position: absolute; ">
+        </div>
+            <div class="row" style="text-align: center">
+                <div class="col-md-6 col-lg-3 cardBottom" >
+
+                </div>
+
+                <div class="col-md-6 col-lg-3 cardBottom" >
+
+                </div>
+                <div class="col-md-6 col-lg-3 cardBottom phone" >
+
+                </div>
+                <div class="col-md-6 col-lg-3 cardBottom phone" >
+
+                </div>
+            </div>
+        </div>
+        <div id="about">Tracks</div>
+
+
+
+    </div>
+</div>
+
+
+
+<!--details-->
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div id="rightDet" class="col-md-2" style="float: right;  display: inline-block;  color : white; ">
+            <!--green arrow required-->
+            <!--<img src="Assets/Arrow.png" style=" float: right; margin-right: 4%;  margin-top: 30% ">-->
+            <img src="Assets/WTM.png" id="logoDet" >
+        </div>
+
+        <div id="leftDet" class="col-md-10" style="float:left;  height : 900px;  display: inline-block;background: rgba(0,194,162,1); color: white; text-align: justify; ">
+
+            <p style="margin-top: 17%; margin-left: 10%"><span style="opacity: 0.5">Date of the Hack,</span><br>
+                23rd and 24th February 2019<br><br>
+                <span style="opacity: 0.5">Venue of the Hack,</span><br>
+                Name of the hall<br><br>
+                <span style="opacity: 0.5">Timing,</span><br>
+                6:30pm (23rd) to 6:30pm (24th)<br><br>
+                <span style="opacity: 0.5">Rule*</span><br>
+                Minimum requirement to join the hack is fifty percent female team <br>
+
+                <!--<button style="margin-top: 40px; color: white;">-->
+                <!--<span style="background-color: rgba(48,125,255,1); padding: 15px 60px 15px 20px;">Register</span><span style="background-color: rgba(34,101,214,1); padding: 15px 15px 15px 15px; margin-right: 15px;"><img src="Assets/ArrowRight.png"></span>-->
+                <!--</button>-->
+            </p>
+        </div>
+
+        <div  id="event">
+            Details
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
