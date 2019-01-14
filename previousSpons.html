@@ -17,22 +17,24 @@
         }
 
         @media (max-width: 990px) {
-            #right {
+            #rightPs {
                 width : 100%;
                 max-height: 70px;
+                padding: 0px !important;
             }
-            #left {
+            #leftPs {
                 width : 100%;
                 display: block;
                 max-height: 550px;
 
             }
-            #logo {
+            #logoPs {
                 height: 80px;
                 opacity: 0.3;
                 width : auto;
                 float: right;
                 margin-top : 20px;
+
             }
             #details {
                 color: white;
@@ -46,12 +48,13 @@
                 font-size: 20px;
                 margin-top: 12%;
             }
+
         }
         @media (min-width: 991px) {
-            #left {
+            #leftPs {
                 height: 900px;
             }
-            #logo {
+            #logoPs {
                 position: absolute;
                 height: 260px;
                 width : auto;
@@ -78,12 +81,12 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-2" id="right" style="float: right; display: inline-block;  color : white; ">
+        <div class="col-md-2" id="rightPs" style="float: right; display: inline-block;  color : white; ">
             <!--green arrow required-->
             <!--<img src="Assets/Arrow.png" style=" float: right; margin-right: 4%;  margin-top: 30% ">-->
-            <img src="Assets/WTM.png" id="logo">
+            <img src="Assets/WTM.png" id="logoPs">
         </div>
-        <div class="col-md-10 " id="left" style="float:left;height: 900px;display: inline-block;background: rgba(0,194,162,1);color: white;">
+        <div class="col-md-10 " id="leftPs" style="float:left;height: 900px;display: inline-block;background: rgba(0,194,162,1);color: white;">
 
         </div>
         <div  id="details">
