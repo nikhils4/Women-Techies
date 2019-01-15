@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>slide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<style>
+    .slide {
+        display : inline-block;
+    }
+    .show {
+        display: block;
+    }
+
+</style>
+<body>
+<div class="slide animated" id="home" style="width: 100%; height: 700px; background-color: #6ab04c; position: absolute;">
+    <button id="start">Slide</button>
+</div>
+<div class="slide animated" id="one" style="width: 100%; height: 700px; background-color: red; position: absolute;">
+    <button id="oneB">Slide back</button>
+    <button id="oneF">Slide forward</button>
+</div>
+<div id="two" class="slide animated" style="width: 100%; height: 700px; background-color: blue; position: absolute;">
+    <button id="twoB">Slide back</button>
+    <button id="twoF">Slide forward</button>
+</div>
+<div id="three" class="slide animated" style="width: 100%; height: 700px; background-color: yellow; position: absolute;">
+    <button id="threeB">Slide back</button>
+    <button id="threeF">Slide forward</button>
+</div>
+<div id="four" class="slide animated" style="width: 100%; height: 700px; background-color:orange; position: absolute;">
+    <button id="fourB">Slide back</button>
+    <button id="fourF">Slide forward</button>
+</div>
+<!--<script>-->
+    <!--document.getElementById("one").style.display = "none";-->
+    <!--document.getElementById("two").style.display = "none";-->
+    <!--document.getElementById("three").style.display = "none";-->
+    <!--document.getElementById("four").style.display = "none";-->
+    <!--$("#start").click(function () {-->
+        <!--$("#one").hide();-->
+        <!--$("#two").addClass("show fadeInRight");-->
+    <!--})-->
+<!--</script>-->
+</body>
+</html>
