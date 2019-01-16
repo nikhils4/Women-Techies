@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Women Techies | DSC</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <style>
+        body {
+            margin: 0;
+        }
+        @media (max-width : 600px) {
+            #rightAbt {
+                width: 100vw;
+                height: 10vh;
+                max-height: 80px;
+                padding : 0 !important;
+            }
+            #leftAbt {
+                width : 100vw;
+                display: block;
+                height : 90vh;
+                padding : 0 !important;
+            }
+            #logoAbt {
+                height: 20vw;
+                opacity: 0.3;
+                width : auto;
+                margin-top : 2vh;
+            }
+            #desc {
+                color: white;
+                position: absolute;
+                background: rgba(1, 175, 146, 1);
+                height: auto;
+                width: 50vw;
+                text-align: center;
+                font-size: 1.4em;
+                padding: 5px 5px 5px 5px;
+                margin-left: 25vw;
+                margin-right: 25vw;
+                margin-top : 8vh;
+                display: flow ;
+            }
+            p {
+                margin-top: 8vh;
+                margin-left : 10vw;
+                margin-right : 10vw;
+                font-size: 1.0em;
+            }
+            .hideen {
+                display : none;
+            }
+
+            #leftTr {
+                width: 100vw;
+                max-height: 80px;
+                height: 10vh;
+                padding: 0 !important;
+            }
+
+            #rightTr {
+                width: 100vw;
+                height: auto;
+                display: block;
+                padding: 0 !important;
+            }
+
+            #logoTr {
+                height: 20vw;
+                opacity: 0.3;
+                width: auto;
+                margin-top: 2vh;
+            }
+
+            .cardTop {
+                height: 33vw;
+                width: 33vw;
+                min-width: 120px;
+                min-height: 120px;
+                max-height: 180px;
+                max-width: 180px;
+                margin: 3vh 3.8vw 0 3.8vw;
+                border-radius: 15px;
+                background: rgb(81, 213, 191);
+                display: inline-block;
+            }
+
+            .cardBottom {
+                height: 33vw;
+                width: 33vw;
+                min-width: 120px;
+                min-height: 120px;
+                max-height: 180px;
+                max-width: 180px;
+                margin: 3vh 3.8vw 0 3.8vw;
+                border-radius: 15px;
+                background: rgb(81, 213, 191);
+                display: inline-block;
+            }
+            .cardLast {
+                margin-bottom: 6vh;
+            }
+            .X {
+                margin-top: 10vh;
+            }
+
+
+            #about {
+                color: white;
+                padding: 5px;
+                position: absolute;
+                background: rgba(1, 175, 146, 1);
+                height: auto;
+                width: 40vw;
+                text-align: center;
+                font-size: 1.4em;
+                margin-top: 7vh;
+                margin-left: 30vw;
+                margin-right : 30vw;
+            }
+
+            #first{
+                display : none;
+            }
+            #main {
+                width : 100vw;
+            }
+            #second {
+                display : none;
+            }
+            #top-img {
+                width: 80vw;
+                margin: auto auto;
+            }
+            #img-mid {
+                width : 75vw;
+            }
+            #rightPs {
+                width : 100vw;
+                height: 10vh;
+                max-height: 80px;
+                padding: 0px !important;
+            }
+            #leftPs {
+                width : 100vw;
+                display: block;
+                height: 90vh;
+                padding: 0 !important;
+            }
+            #logoPs {
+                height: 20vw;
+                opacity: 0.3;
+                width : auto;
+                float: right;
+                margin-top : 2vh;
+            }
+            #details {
+                color: white;
+                position: absolute;
+                background: rgba(1, 175, 146, 1);
+                height: auto;
+                margin-left: 27.5vw;
+                margin-right: 27.5vw;
+                width: 45vw;
+                text-align: center;
+                font-size: 1.4em;
+                padding: 5px 5px 0 5px;
+                display: flow;
+                margin-top: 7.5vh;
+            }
+        }
+        @media (min-width : 601px) {
+            #logoAbt {
+                position: absolute;
+                height: 28vw;
+                max-height: 180px;
+                width : auto;
+                opacity: 0.4;
+                margin-left: -6vw;
+                margin-top : 65vh;
+                display: flex;
+            }
+            #desc {
+                color: white;
+                margin-left: 10vw;
+                position: absolute;
+                background: rgba(1, 175, 146, 1);
+                height: auto;
+                width: 20vw;
+                padding: 5px 0 5px 0;
+                text-align: center;
+                font-size: 2.2em;
+                margin-top: 10vh;
+                display: inherit;
+            }
+            #rightAbt {
+                height: 100vh;
+                padding : 0 !important;
+            }
+            #leftAbt {
+                height : 100vh ;
+                padding: 0 !important;
+            }
+            p {
+                margin-top: 25vh;
+                margin-left : 8vw;
+                margin-right : 10vw;
+                font-size: 1.6em;
+                line-height : 1.5;
+            }
+            #logoTr {
+                position: absolute;
+                height: 28vh;
+                max-height: 180px;
+                width : auto;
+                opacity: 0.4;
+                margin-left : -6vw;
+                margin-top : 65vh;
+                display: flex;
+            }
+            .cardTop {
+                height: 14vw;
+                width : 14vw;
+                margin : 22vh 2vw 2vh 1vw;
+                min-width: 120px;
+                min-height : 120px;
+                max-width: 210px;
+                max-height : 210px;
+                border-radius: 15px;
+                background: rgb(81,213,191);
+                display: inline-block;
+            }
+            .cardBottom {
+                height: 14vw;
+                width : 14vw;
+                margin : 10vh 2vw 2vh 1vw;
+                min-width: 120px;
+                min-height : 120px;
+                max-width: 210px;
+                max-height : 210px;
+                border-radius: 15px;
+                background: rgb(81,213,191);
+                display: inline-block;
+            }
+            #about {
+                color: white;
+                margin-left: 10vw;
+                position: absolute;
+                background: rgba(1, 175, 146, 1);
+                height: auto;
+                width: 15vw;
+                text-align: center;
+                font-size: 2.2em;
+                margin-top: 10vh;
+                display: inherit;
+            }
+            #rightTr {
+                height: 100vh;
+                padding-left: 8vw;
+            }
+            #leftTr {
+                height: 100vh;
+                padding: 0 !important;
+            }
+
+            #first {
+                display: inline-block;
+                width : 19.9vw;
+            }
+            #main {
+                width : 60vw;
+            }
+            #second {
+                display: inline-block;
+                width : 20vw;
+            }
+            #top-img {
+                width: 60vw;
+            }
+            #img-mid {
+                width : 35vw;
+            }
+
+            #leftPs {
+                height: 100vh;
+                width: 82vw;
+            }
+            #rightPs {
+                height: 100vh;
+                width : 18vw;
+            }
+
+            #logoPs {
+                position: absolute;
+                height: 28vw;
+                max-height: 180px;
+                width : auto;
+                opacity: 0.4;
+                margin-left: 6vw;
+                margin-top : 65vh;
+                display: flex;
+            }
+            #details {
+                color: white;
+                margin-left: 68vw;
+                position: absolute;
+                padding-top: 5px;
+                background: rgba(1, 175, 146, 1);
+                height: auto;
+                width: 25vw;
+                text-align: center;
+                font-size: 2.2em;
+                margin-top: 10vh;
+                display: inherit;
+            }
+        }
+    </style>
+</head>
+<body style="font-family: 'Muli', sans-serif;">
+
+
+<!--home-->
+
+<div class="container-fluid">
+    <div class="row" style="word-spacing: -0.25em;">
+        <div id="first" style="height : 100vh; width : 19.9vw; ">
+
+        </div>
+        <div style="height: 100vh;  display: inline-block;  background: url('Assets/Hashtag.svg') center no-repeat fixed; background-size: contain;" id="main"  >
+            <div style="position : absolute; display: flex; width: inherit; height: 5vw;margin-top: 2vh">
+                <img id="top-img" src="Assets/Top-image.png" style="  height: auto; "  >
+            </div>
+            <div style="position : absolute; display: flex; width: inherit; height: 100vh;">
+                <img id="img-mid"  src="Assets/won.svg" style=" height: auto;margin : auto;"  >
+            </div>
+            <div style="position: absolute; text-align: center; width: inherit; height: 100vh;">
+                <div style="margin-top: 90vh; font-size: 1em; color: rgba(0,194,162,1);"><span style="border-bottom-width : 3px; border-bottom-style: solid"><span style="padding-right: 4px;">KNOW</span><span>MORE</span></span></div>
+            </div>
+        </div>
+        <div id="second" style="height:100vh;" >
+
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<!--about-->
+<div class="container-fluid">
+    <div class="row">
+        <div id="rightAbt" class="col-md-2" style="float:left; display: inline-block;">
+            <img  id="logoAbt" src="Assets/WTM.png"  >
+        </div>
+
+        <div id="leftAbt" class="col-md-10" style="float: right; display: inline-block; background: rgba(0,194,162,1); color : white; text-align: justify;">
+            <div style="position: absolute; margin-left: 78vw; margin-top: 45vh ">
+                <img src="Assets/Arrow.png"  class="hideen" >
+            </div>
+            <div style="position: absolute; margin-left: 78vw; margin-top: 55vh">
+                <img src="Assets/arrowDown.png" class="hideen">
+            </div>
+
+            <p >Hello this is HerHack Websiten iudbf ijashd  oidv asb vou bauos vuo osov ouas dovoin oid nvio nasoud voun ousd boub ouas dvou bouasb douvb oubs douvb joasb douv bob sodjvb o a soudvb ou bsodb oubsdo vo suodfb oub sduob uiob dwuicb iusb duovb uoas bdvuob uob vubsuofb vuob quob uob uodvb iuoab sduovb uabsdvuo uosb vuob uboF</p>
+
+
+
+        </div>
+
+        <div id="desc">About HerHack</div>
+
+
+    </div>
+</div>
+
+<!--previous sponsors-->
+
+<div class="container-fluid" style="overflow-x: hidden">
+    <div class="row" style="text-align: center; width : 100vw;">
+        <div id="rightPs" class="col-md-2" style="float: right; display: inline-block;  color : white; ">
+            <!--green arrow required-->
+            <div style=" float: right;position: absolute; margin-top: 45vh ; margin-left: 12.7vw; ">
+                <img class="hideen" src="Assets/GreenUp.svg" >
+            </div>
+            <div style=" float: right;position: absolute; margin-top : 55vh ; margin-left: 12.7vw">
+                <img src="Assets/GreenDown.svg" class="hideen" >
+            </div>
+            <img src="Assets/WTM.png" id="logoPs">
+        </div>
+        <div class="col-md-10" id="leftPs" style="float:left;display: inline-block;background: rgba(0,194,162,1);color: white;">
+
+        </div>
+
+        <div  id="details">
+            Previous Sponsors
+
+        </div>
+    </div>
+</div>
+
+
+
+<!--tracks-->
+<div class="container-fluid">
+    <div class="row" style="overflow-x: hidden; ">
+        <div id="leftTr" style="float:left;  display: inline-block;" class=" col-md-2">
+            <img id="logoTr" src="Assets/WTM.png">
+        </div>
+        <div id="rightTr" class="col-md-10" style="float: right; display: inline-block; background: rgba(0,194,162,1); color : white;">
+            <!--place for cards    -->
+
+            <div  style="  margin-left: 70vw; margin-top : 45vh ; position: absolute; ">
+                <img src="Assets/Arrow.png" class="hideen">
+            </div>
+            <div  style=" position:absolute;  margin-left: 70vw; margin-top: 55vh; ">
+                <img src="Assets/arrowDown.png" class="hideen" >
+            </div>
+            <div class="row" style="text-align: center;" >
+                <div class="col-md-6 col-lg-3 cardTop X " >
+
+                </div>
+                <div class="col-md-6 col-lg-3 cardTop "  >
+
+                </div>
+                <div class="col-md-6 col-lg-3 cardTop"  >
+
+                </div>
+                <div class="col-md-6 col-lg-3 cardTop"  >
+
+                </div>
+            </div>
+            <div class="row" style="text-align: center">
+                <div class="col-md-6 col-lg-3 cardBottom " >
+
+                </div>
+                <div class="col-md-6 col-lg-3 cardBottom" >
+
+                </div>
+                <div class="col-md-6 col-lg-3 cardBottom cardLast" >
+
+                </div>
+                <div class="col-md-6 col-lg-3 cardBottom cardLast" >
+
+                </div>
+            </div>
+        </div>
+        <div id="about">Tracks</div>
+
+    </div>
+</div>
+
+
+
+</body>
+</html>
