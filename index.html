@@ -175,6 +175,75 @@
                 display: flow;
                 margin-top: 7.5vh;
             }
+            #rightDet {
+                width : 100vw;
+                height: 10vh;
+                max-height : 80px;
+                padding: 0px !important;
+            }
+            #leftDet {
+                width : 100vw;
+                height : 90vh;
+                display: block;
+                font-size: 1em;
+                padding-right: 8vw;
+
+
+            }
+            #logoDet {
+                height: 20vw;
+                opacity: 0.3;
+                width : auto;
+                float: right;
+                margin-top : 2vh;
+            }
+            #event {
+                color: white;
+                margin-left : 35vw;
+                margin-right : 35vw;
+                position: absolute;
+                background: rgba(1, 175, 146, 1);
+                height: auto;
+                width: 30vw;
+                padding: 5px 5px 0 5px;
+                text-align: center;
+                font-size: 1.4em;
+                display: flow;
+                margin-top: 7.5vh;
+            }
+            .hideen {
+                display: none;
+            }
+            /*.reg {
+                min-width:112px;
+                width: 15vw;
+                height: 4vh;
+                min-height: 58px;
+                background-color:rgba(48,125,255,1);
+                text-align: center;
+                font-size: 1.3em;
+                float:left;
+                padding:10px;
+                display: inline-block;
+                position: absolute;
+            }
+            .regArr {
+                min-width:45px;
+                margin-left: 27vw;
+                height:4vh;
+                min-height: 58px;
+                background-color:rgba(34,101,214,1);
+                text-align: center;
+                float:right;
+                padding-left: 0px;
+                padding-top: 9px;
+                display: inline-block;
+                position: absolute;
+            }*/
+            #cont {
+                margin-top : 8vh;
+            }
+
         }
         @media (min-width : 801px) {
             #logoAbt {
@@ -320,6 +389,85 @@
                 margin-top: 10vh;
                 display: inherit;
             }
+            #leftDet {
+                font-size: 1.2em;
+                width : 82vw;
+                height: 100vh;
+            }
+            #rightDet {
+                height: 100vh;
+                width: 18vw;
+            }
+            #logoDet {
+                position: absolute;
+                height: 28vw;
+                max-height: 180px;
+                width : auto;
+                opacity: 0.4;
+                margin-left: 6vw;
+                margin-top : 65vh;
+                display: flex;
+            }
+            #event {
+                color: white;
+                margin-left: 78vw;
+                position: absolute;
+                background: rgba(1, 175, 146, 1);
+                height: auto;
+                width: 12vw;
+                text-align: center;
+                font-size: 2.2em;
+                margin-top: 10vh;
+                display: inherit;
+            }
+            /*.reg {
+                min-width:200px;
+                width: 12vw;
+                height:6vh;
+                min-height: 58px;
+                background-color:rgba(48,125,255,1);
+                text-align: center;
+                padding:10px;
+                display: inline-block;
+                position: absolute;
+            }
+            .regArr {
+                min-width:53px;
+                margin-left: 12vw;
+                height:6vh;
+                min-height: 58px;
+                background-color:rgba(34,101,214,1);
+                text-align: center;
+                padding-top: 13px;
+                vertical-align: middle;
+                display: inline-block;
+                position: absolute;
+            }*/
+            #cont {
+                margin-top: 23vh;
+            }
+
+        }
+        div.relative {
+            position: relative;
+            width: 19vw;
+            font-size: 1.4em;
+            margin-left: 10vw;
+            padding-left: 3.3vw;
+            line-height: 8.5vh;
+            height: 6vh;
+            background-color: rgba(48,125,255,1);
+        }
+
+        div.absolute {
+            position: absolute;
+            top: 0px;
+            right: 0;
+            line-height: 6vh;
+            background: rgba(34,101,214,1);
+            width: 4vw;
+            height: 6vh;
+
         }
     </style>
 </head>
@@ -452,6 +600,67 @@
 
     </div>
 </div>
+
+<!--details-->
+    <div class="container-fluid section" style="overflow-x: hidden; overflow-y: hidden">
+        <div class="row" style="width : 100vw;">
+
+
+            <div id="rightDet" class="col-md-2" style="float: right;  display: inline-block;  color : white; ">
+                <!--green arrow required-->
+                <div class="hideen">
+                    <img src="Assets/GreenUp.svg" style="position: absolute; float: right; margin-top: 45vh;  margin-left: 12.7vw ">
+
+
+                </div>
+                <img src="Assets/WTM.png" id="logoDet" >
+            </div>
+
+
+            <div id="leftDet" class="col-md-10" style="float:left;   display: inline-block;background: rgba(0,194,162,1); color: white; text-align: justify; ">
+
+
+                <p id="cont" style=" margin-left: 10vw"><span style="opacity: 0.5">Date of the Hack,</span><br>
+                    23rd and 24th February 2019<br><br>
+                    <span style="opacity: 0.5">Venue of the Hack,</span><br>
+                    Name of the hall<br><br>
+                    <span style="opacity: 0.5">Timing,</span><br>
+                    6:30pm (23rd) to 6:30pm (24th)<br><br>
+                    <span style="opacity: 0.5">Rule*</span><br>
+                    Minimum requirement to join the hack is fifty percent female team <br></p>
+
+
+
+                <!-- <div style="margin-left : 10vw; margin-top: 5vh;" >
+                    <div class="reg">
+                        <span style="/*padding-left: 1vw;*/line-height: 5vh;text-align: center;">Register</span>
+                    </div>
+                    <div class="regArr">
+                        <img src="Assets/ArrowRight.png" style="line-height: 5vh; position:relative; /*right: 4px;*/ margin: auto auto;">
+                    </div>
+                </div> -->
+
+
+
+                <div class="relative" style="min-height: 61px;min-width: 170px; clear: both; margin-top: 7vh;">Register
+                    <div class="absolute" style="clear: both; min-height: 61px;min-width: 60px;"><img src="Assets/ArrowRight.png" style="position: absolute;padding-top: 2.5vh;padding-left: 1vw; margin : auto auto"></div>
+                </div>
+
+
+
+            </div>
+            <!--<button style="margin-top: 40px; color: white;">-->
+            <!--<span style="background-color: rgba(48,125,255,1); padding: 15px 60px 15px 20px;">Register</span><span style="background-color: rgba(34,101,214,1); padding: 15px 15px 15px 15px; margin-right: 15px;"><img src="Assets/ArrowRight.png"></span>-->
+            <!--</button>-->
+            <div  id="event" >
+                Details
+            </div>
+        </div>
+
+
+
+
+    </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--<script src="js/fullpage.js"></script>-->
