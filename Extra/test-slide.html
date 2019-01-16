@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>slide</title>
+    <script src="jquery.js"></script>
+    <!--Load jQuery and fullpage tags -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.js"></script>
+
+    <!-- Adding fullpage.css is essential-->
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.css" />
+</head>
+<style>
+
+
+</style>
+<body style="background: orange;">
+
+<div id="fullpage">
+    <div class="section">
+        <div class="slide " id="home" style="width: 100%; height: 700px;  ">
+            hello
+            <button id="start">Slide</button>
+        </div>
+        <div class="slide " id="one" style="width: 100%; height: 700px; ">
+            1
+            <button id="oneB">Slide back</button>
+            <button id="oneF">Slide forward</button>
+        </div>
+        <div id="two" class="slide " style="width: 100%; height: 700px;  ">
+            2
+            <button id="twoB">Slide back</button>
+            <button id="twoF">Slide forward</button>
+        </div>
+        <div id="three" class="slide " style="width: 100%; height: 700px; ">
+            3
+            <button id="threeB">Slide back</button>
+            <button id="threeF">Slide forward</button>
+        </div>
+        <div id="four" class="slide " style="width: 100%; height: 700px; ">
+            4
+            <button id="fourB">Slide back</button>
+            <button id="fourF">Slide forward</button>
+        </div>
+    </div>
+</div>
+<script>
+// document.getElementById("one").style.display = "none";
+// document.getElementById("two").style.display = "none";
+// document.getElementById("three").style.display = "none";
+// document.getElementById("four").style.display = "none";
+//
+//     $(document).ready(function () {
+//         $("#start").click(function () {
+//             $("#home").hide();
+//             $("#one").addClass("show slideInRight")
+//         })
+//     })
+$(document).ready(function(){
+
+    $(#fullpage).fullpage();
+
+});
+</script>
+</body>
+</html>
