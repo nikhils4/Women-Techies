@@ -15,6 +15,9 @@
         body {
             margin: 0;
         }
+        html {
+            scroll-behavior: smooth;
+        }
         @media (max-width : 800px) {
             #rightAbt {
                 width: 100vw;
@@ -351,9 +354,10 @@
                 width : 18vw;
             }
             #top-img {
-                width: 60vw;
+                width: 30vw;
             }
             #img-mid {
+                height: auto;
                 width : 35vw;
             }
 
@@ -390,7 +394,7 @@
                 display: inherit;
             }
             #leftDet {
-                font-size: 1.2em;
+                font-size: 1em;
                 width : 82vw;
                 height: 100vh;
             }
@@ -402,10 +406,10 @@
                 position: absolute;
                 height: 28vw;
                 max-height: 180px;
-                width : auto;
+                width: auto;
                 opacity: 0.4;
-                margin-left: 6vw;
-                margin-top : 65vh;
+                margin-left: 8vw;
+                margin-top: 65vh;
                 display: flex;
             }
             #event {
@@ -444,7 +448,7 @@
                 position: absolute;
             }*/
             #cont {
-                margin-top: 23vh;
+                margin-top: 20vh;
             }
 
         }
@@ -469,29 +473,71 @@
             height: 6vh;
 
         }
+
+        /*#one{*/
+            /*display:block;*/
+        /*}*/
+
+        /*#two{*/
+            /*display:none;*/
+        /*}*/
+
+        /*#three{*/
+            /*display:none;*/
+        /*}*/
+
+        /*#four{*/
+            /*display: none;*/
+        /*}*/
+
+        /*#five{*/
+            /*display:none;*/
+        /*}*/
+
+        /*#two {*/
+            /*position: absolute;*/
+            /*top: 0px;*/
+            /*left: 200%;*/
+            /*opacity: 0;*/
+            /*animation:slide-in 1.2s ease-in 0s forwards;*/
+        /*}*/
+
+        /*@-webkit-keyframes slide-in{*/
+            /*0%{*/
+                /*left: 200%;*/
+                /*opacity: 0;*/
+            /*}*/
+
+            /*100%{*/
+                /*left: 0%;*/
+                /*opacity: 1;*/
+            /*}*/
+        }
     </style>
 </head>
 <body style="font-family: 'Muli', sans-serif;">
 <div id="fullpage">
 
 <!--home-->
-<div class="container-fluid section" >
+<div class="container-fluid section" id="one" >
     <div class="row" style="word-spacing: -0.25em;">
-        <div id="first" style="height : 100vh; width : 19.9vw; ">
+        <div id="first" style="height : 99vh; width : 19.9vw; ">
 
         </div>
-        <div style="height: 100vh;  display: inline-block;  background: url('Assets/Hashtag.svg') center no-repeat fixed; background-size: contain;" id="main"  >
-            <div style="position : absolute; display: flex; width: inherit; height: 5vw;margin-top: 2vh">
-                <img id="top-img" src="Assets/Top-image.png" style="  height: auto; "  >
+        <div style="height: 99vh;  display: inline-block;  background: url('Assets/Hashtag.svg') center no-repeat fixed; background-size: contain;" id="main"  >
+            <div style="position : absolute;   width: auto; padding-left: 15vw; padding-right: 15vw; margin-top: 10px; ">
+                <img id="top-img" src="Assets/Top-image.png" style="object-fit: cover; "  >
             </div>
             <div style="position : absolute; display: flex; width: inherit; height: 100vh;">
                 <img id="img-mid"  src="Assets/won.svg" style=" height: auto;margin : auto;"  >
             </div>
-            <div style="position: absolute; text-align: center; width: inherit; height: 100vh;">
-                <div style="margin-top: 90vh; font-size: 1em; color: rgba(0,194,162,1);"><span style="border-bottom-width : 3px; border-bottom-style: solid"><span style="padding-right: 4px;">KNOW</span><span>MORE</span></span></div>
-            </div>
+
+                <div style="position: absolute; text-align: center; width: inherit; height: 100vh; text-decoration: none">
+                    <div style="margin-top: 90vh; font-size: 1.3em; color: rgba(0,194,162,1);"><span style="border-bottom-width : 3px; padding-bottom: 5px; border-bottom-style: solid"><span class="know-more-click" style="padding-right: 4px;">KNOW</span><span class="know-more-click">MORE</span></span></div>
+                </div>
+
         </div>
-        <div id="second" style="height:100vh;" >
+        <div id="second" style="height:99vh;" >
 
         </div>
     </div>
@@ -499,7 +545,7 @@
 
 
 <!--about-->
-<div class="container-fluid section">
+<div class="container-fluid section" id="two">
     <div class="row">
         <div id="rightAbt" class="col-md-2" style="float:left; display: inline-block;">
             <img  id="logoAbt" src="Assets/WTM.png"  >
@@ -527,7 +573,7 @@
 
 <!--previous sponsors-->
 
-<div class="container-fluid section" style="overflow-x: hidden">
+<div class="container-fluid section" style="overflow-x: hidden" id="three">
     <div class="row" style="text-align: center; width : 100vw;">
         <div id="rightPs" class="col-md-2" style="float: right; display: inline-block;  color : white; ">
             <!--green arrow required-->
@@ -553,7 +599,7 @@
 
 
 <!--tracks-->
-<div class="container-fluid section">
+<div class="container-fluid section" id="four">
     <div class="row" style="overflow-x: hidden; ">
         <div id="leftTr" style="float:left;  display: inline-block;" class=" col-md-2">
             <img id="logoTr" src="Assets/WTM.png">
@@ -602,7 +648,7 @@
 </div>
 
 <!--details-->
-    <div class="container-fluid section" style="overflow-x: hidden; overflow-y: hidden">
+    <div class="container-fluid section" style="overflow-x: hidden; overflow-y: hidden" id="five">
         <div class="row" style="width : 100vw;">
 
 
@@ -667,7 +713,7 @@
 <!--<script src="js/jquery.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.js"></script>
 <script>
-    $(document).ready(function() {
+   /* $(document).ready(function() {
         console.log('ready');
         $('#fullpage').fullpage({
             //options here
@@ -677,8 +723,14 @@
 
         //methods
         $.fn.fullpage.setAllowScrolling(true);
-    });
+    });*/
 
+    $(document).ready(function(){
+        $('.know-more-click').click(function(){
+            $('#one').fadeOut(0);
+            $('#two').fadeIn(0);
+        })
+    })
 
 </script>
 
