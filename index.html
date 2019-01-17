@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <!--<link href="css/fullpage.css">-->
 
     <style>
         body {
@@ -68,7 +67,7 @@
 
             #rightTr {
                 width: 100vw;
-                height: auto;
+                height: 680px;
                 display: block;
                 padding: 0 !important;
             }
@@ -141,7 +140,8 @@
                 margin: auto auto;
             }
             #img-mid {
-                width : 75vw;
+                width : 40vh ;
+
             }
             #rightPs {
                 width : 100vw;
@@ -356,7 +356,7 @@
             }
             #img-mid {
                 height: auto;
-                width : 35vw;
+                width : 45vw;
             }
 
             #leftPs {
@@ -753,7 +753,7 @@
                 <img id="top-img" src="Assets/Top-image.png" style="object-fit: cover; "  >
             </div>
             <div style="position : absolute; display: flex; width: inherit; height: 100vh;">
-                <img id="img-mid"  src="Assets/Group 15.png" style="width : 48vw; height: auto;margin : auto;"  >
+                <img id="img-mid"  src="Assets/Group 15.png" style="margin : auto;"  >
             </div>
 
                 <div style="position: absolute; text-align: center; width: inherit; height: 100vh; text-decoration: none">
@@ -937,8 +937,7 @@
 <!--<script src="js/jquery.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.js"></script>
 <script>
-   $(document).ready(function() {
-        console.log('ready');
+    if($(window).width() < 10 ){
         $('#fullpage').fullpage({
             //options here
             autoScrolling:true,
@@ -947,10 +946,7 @@
 
         //methods
         $.fn.fullpage.setAllowScrolling(true);
-    });
-
-
-
+    }
 </script>
 
 </body>
