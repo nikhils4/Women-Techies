@@ -15,6 +15,12 @@
         body {
             margin: 0;
         }
+        #fp-nav ul li a span, .fp-slidesNav ul li a span{
+            background-color: rgb(48,125,255)!important;
+        }
+        #clicks {
+            cursor: pointer;
+        }
         @media (max-width : 800px) {
             #rightAbt {
                 width: 100vw;
@@ -445,14 +451,14 @@
                 /*left: 0%;*/
                 /*opacity: 1;*/
             /*}*/
-        }
+        /*}*/
     </style>
 </head>
 <body style="font-family: 'Muli', sans-serif;">
 <div id="fullpage">
 
 <!--home-->
-<div class="container-fluid section" id="one" >
+<div class="container-fluid section" data-anchor="one" >
     <div class="row" style="word-spacing: -0.25em;">
         <div id="first" style="height : 99vh; width : 19.9vw; ">
 
@@ -466,7 +472,7 @@
             </div>
 
                 <div style="position: absolute; text-align: center; width: inherit; height: 100vh; text-decoration: none">
-                    <div style="margin-top: 90vh; font-size: 1.3em; color: rgba(0,194,162,1);"><span style="border-bottom-width : 3px; padding-bottom: 5px; border-bottom-style: solid"><span class="know-more-click" style="padding-right: 4px;">KNOW</span><span class="know-more-click">MORE</span></span></div>
+                    <div   id="clicks" style="margin-top: 90vh; font-size: 1.3em; color: rgba(0,194,162,1);"><span style="border-bottom-width : 3px; padding-bottom: 5px; border-bottom-style: solid"><span class="know-more-click" style="padding-right: 4px;"><a href="#two">KNOW</a></span><span class="know-more-click">MORE</span></span></div>
                 </div>
 
         </div>
@@ -478,19 +484,14 @@
 
 
 <!--about-->
-<div class="container-fluid section" id="two">
+<div class="container-fluid section"  data-anchor="two">
     <div class="row">
         <div id="rightAbt" class="col-md-2" style="float:left; display: inline-block;">
             <img  id="logoAbt" src="Assets/WTM.png"  >
         </div>
 
         <div id="leftAbt" class="col-md-10" style="float: right; display: inline-block; background: rgba(0,194,162,1); color : white; text-align: justify;">
-            <div style="position: absolute; margin-left: 78vw; margin-top: 45vh ">
-                <img src="Assets/Arrow.png"  class="hideen" >
-            </div>
-            <div style="position: absolute; margin-left: 78vw; margin-top: 55vh">
-                <img src="Assets/arrowDown.png" class="hideen">
-            </div>
+
 
             <p >Hello this is HerHack Websiten iudbf ijashd  oidv asb vou bauos vuo osov ouas dovoin oid nvio nasoud voun ousd boub ouas dvou bouasb douvb oubs douvb joasb douv bob sodjvb o a soudvb ou bsodb oubsdo vo suodfb oub sduob uiob dwuicb iusb duovb uoas bdvuob uob vubsuofb vuob quob uob uodvb iuoab sduovb uabsdvuo uosb vuob uboF</p>
 
@@ -506,16 +507,11 @@
 
 <!--previous sponsors-->
 
-<div class="container-fluid section" style="overflow-x: hidden" id="three">
+<div class="container-fluid section" style="overflow-x: hidden" data-anchor="three" >
     <div class="row" style="text-align: center; width : 100vw;">
         <div id="rightPs" class="col-md-2" style="float: right; display: inline-block;  color : white; ">
             <!--green arrow required-->
-            <div style=" float: right;position: absolute; margin-top: 45vh ; margin-left: 12.7vw; ">
-                <img class="hideen" src="Assets/GreenUp.svg" >
-            </div>
-            <div style=" float: right;position: absolute; margin-top : 55vh ; margin-left: 12.7vw">
-                <img src="Assets/GreenDown.svg" class="hideen" >
-            </div>
+
             <img src="Assets/WTM.png" id="logoPs">
         </div>
         <div class="col-md-10" id="leftPs" style="float:left;display: inline-block;background: rgba(0,194,162,1);color: white;">
@@ -532,7 +528,7 @@
 
 
 <!--tracks-->
-<div class="container-fluid section " id="four">
+<div class="container-fluid section " data-anchor="four">
     <div class="row" style="overflow-x: hidden; ">
         <div id="leftTr" style="float:left;  display: inline-block;" class=" col-md-2">
             <img id="logoTr" src="Assets/WTM.png">
@@ -540,12 +536,7 @@
         <div id="rightTr" class="col-md-10" style="float: right; display: inline-block; background: rgba(0,194,162,1); color : white;">
             <!--place for cards    -->
 
-            <div  style="  margin-left: 70vw; margin-top : 45vh ; position: absolute; ">
-                <img src="Assets/Arrow.png" class="hideen">
-            </div>
-            <div  style=" position:absolute;  margin-left: 70vw; margin-top: 55vh; ">
-                <img src="Assets/arrowDown.png" class="hideen" >
-            </div>
+
             <div class="row" style="text-align: center;" >
                 <div class="col-md-6 col-lg-3 cardTop X " >
 
@@ -581,17 +572,12 @@
 </div>
 
 <!--details-->
-    <div class="container-fluid section" style="overflow-x: hidden; overflow-y: hidden" id="five">
+    <div class="container-fluid section" style="overflow-x: hidden; overflow-y: hidden" data-anchor="five">
         <div class="row" style="width : 100vw;">
 
 
             <div id="rightDet" class="col-md-2" style="float: right;  display: inline-block;  color : white; ">
                 <!--green arrow required-->
-                <div class="hideen">
-                    <img src="Assets/GreenUp.svg" style="position: absolute; float: right; margin-top: 45vh;  margin-left: 12.7vw ">
-
-
-                </div>
                 <img src="Assets/WTM.png" id="logoDet" >
             </div>
 
@@ -609,7 +595,7 @@
                     Minimum requirement to join the hack is fifty percent female team <br></p>
 
 
-                <div style="margin-left: 10vw;margin-top: 6.5vh;">
+                <div style="margin-left: 10vw;margin-top: 6.5vh; cursor: pointer;">
                     <img src="Assets/RegButton.png" style="height: auto;width: 15vw;min-height: 45px;min-width: 167px;">
                 </div>
 
@@ -631,12 +617,27 @@
 <script type="text/javascript" src="fullpage/fullpage.extensions.min.js"></script>
 <script type="text/javascript" src="fullpage/fullpage.extensions.min.js"></script>
 <script>
+    if($(window).width() < 800){
+        ('#fullpage').removeAttr('id');
+    }
+</script>
+<script>
 
         $('#fullpage').fullpage({
             //options here
             autoScrolling:true,
-            scrollHorizontally: true
+            scrollHorizontally: true,
+            controlArrows: true,
+            verticalCentered: true,
+            navigation:true,
+            navigationPosition: 'right',
+            anchors:['one', 'two', 'three', 'four', 'five']
         });
+        // $("#clicks").on('click',function() {
+        //     $('html, body').animate({
+        //         'scrollTop' : $("#two").position().top
+        //     });
+        // });
 
         //methods
         $.fn.fullpage.setAllowScrolling(true);
