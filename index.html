@@ -18,10 +18,14 @@
         #fp-nav ul li a span, .fp-slidesNav ul li a span{
             background-color: rgb(48,125,255)!important;
         }
+
         #clicks {
             cursor: pointer;
         }
         @media (max-width : 800px) {
+            #fp-nav ul li a span, .fp-slidesNav ul li a span{
+                display: none;
+            }
             #rightAbt {
                 width: 100vw;
                 height: 10vh;
@@ -220,9 +224,6 @@
                 display: flow;
                 margin-top: 7.5vh;
             }
-            .hideen {
-                display: none;
-            }
 
             #cont {
                 margin-top : 14vh;
@@ -240,6 +241,7 @@
                 margin-top : 65vh;
                 display: flex;
             }
+           
             #desc {
                 color: white;
                 margin-left: 10vw;
@@ -472,7 +474,7 @@
             </div>
 
                 <div style="position: absolute; text-align: center; width: inherit; height: 100vh; text-decoration: none">
-                    <div   id="clicks" style="margin-top: 90vh; font-size: 1.3em; color: rgba(0,194,162,1);"><span style="border-bottom-width : 3px; padding-bottom: 5px; border-bottom-style: solid"><span class="know-more-click" style="padding-right: 4px;"><a href="#two">KNOW</a></span><span class="know-more-click">MORE</span></span></div>
+                    <div   id="clicks" style="margin-top: 90vh; font-size: 1.3em; color: rgba(0,194,162,1);"><a href="#two" style="text-decoration: none; color: rgba(0,194,162,1);"><span style="border-bottom-width : 3px; padding-bottom: 5px; border-bottom-style: solid"><span class="know-more-click" style="padding-right: 4px;">KNOW</span><span class="know-more-click">MORE</span></span></a></div>
                 </div>
 
         </div>
